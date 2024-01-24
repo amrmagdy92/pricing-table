@@ -1,0 +1,62 @@
+body > *{
+    font-family: 'Sono', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: inherit;
+    background-color: #f2f2f2;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 5px;
+    flex: 1;
+    padding: 20px;
+}
+
+.plan-type {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.plan-price {
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.plan-features > li {
+    padding: 10px;
+}
+
+.plan-button {
+    color: white;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #ff6600;
+    padding: 10px;
+}
+
+/* Small devices css */
+@media screen and (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Large devices css */
+@media screen and (min-width: 1251px) {
+    .container {
+        flex-direction: row;
+    }
+}
